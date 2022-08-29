@@ -1,0 +1,41 @@
+// blockquote {
+//     margin: 0;
+//     background-color: $verde;
+//     color: $blanco;
+//     border-radius: 1rem;
+//     padding: 0.5rem;
+//     text-align: center;
+// }
+.testimonial{
+    background-color: $verde;
+    color: $blanco;
+    font-size: 2rem;
+    //font-weight: $black;
+    text-align: center;
+    padding: 2rem;
+    padding-top: -1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    blockquote {
+        padding-left: 2rem;
+
+        &::before {
+            content: "";
+            background-image: url(../img/comilla.svg);
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 8rem;
+            display: block;
+            position: relative;
+            left: -6rem;
+            top: 8rem;
+        }
+    }
+    p {
+        text-align: left;
+        color: $blanco;
+        margin: 0;
+        height: 7rem;
+    }
+    
+}

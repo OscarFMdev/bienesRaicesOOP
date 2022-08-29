@@ -1,0 +1,104 @@
+
+@include tablet {
+    .contenedor-anuncios {
+        display: grid;
+        grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto);
+        grid-template-rows: minmax(0, auto);
+        gap: 1rem;
+        
+    }
+}
+
+.anuncio {
+    background-color: lighten($gris, 5); //Lighten sirve para reducir el color
+    border: 1px solid darken($gris, 10); //Darken sirve para reducir el color
+    margin-bottom: 2.5rem;
+
+    .contenido-anuncio {
+        padding: 2rem;
+        align-items: center;
+        height: auto;
+        @include tablet {
+            align-items: center;
+        }
+        p {
+            word-wrap: break-word;
+        }
+    }
+
+
+    @include tablet {
+        h3,
+        p {
+            margin: 0; //Quitamos los márgenes por defecto
+            text-align: center;
+             
+        }
+        p:not(.lista, .precio){
+            height: 100%;
+        }
+        h3 {
+            height: 10rem;
+            margin-bottom: 4.3rem;
+        }
+    }
+    @include desktop {
+        h3,
+        p {
+            margin: 0; //Quitamos los márgenes por defecto
+            text-align: center;
+             
+        }
+        p:not(.lista, .precio){
+            height: 100%;
+        }
+
+        h3 {
+            height: 5rem;
+            margin-bottom: 4.3rem;
+        }
+    }
+
+
+}
+
+
+
+.precio{
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.iconos-caracteristicas {
+    display: flex; //Colocar de izquierda a derecha
+    list-style: none; //Quitar viñetas
+    padding: 0; //Quitar padding por defecto
+    max-width: 40rem;
+    justify-content: center;
+    
+
+    li {
+         flex: 1;
+         display: flex;
+         justify-content: space-around;
+         
+        filter: invert(70%);
+        p {
+            filter: invert(100%);
+        }
+
+        @include tablet {
+            justify-content: center; //centrar los íconos
+        }
+
+        img {
+            flex: 0 0 3rem;
+            margin-right: 1rem; //Separa el número
+        }
+        p {
+            font-weight: $black;
+        }
+    }
+}

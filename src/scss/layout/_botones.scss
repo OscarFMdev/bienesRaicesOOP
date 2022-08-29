@@ -1,0 +1,30 @@
+.boton {
+    color: $blanco;
+    font-weight: $bold;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: $separacion / 2;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+
+    @include tablet {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-amarillo {
+    background-color: $amarillo;
+}
+.boton-verde {
+    background-color: $verde;
+}
+.boton-rojo {
+    background-color: $rojo;
+}

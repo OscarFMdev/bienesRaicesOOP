@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+
+.footer {
+    padding: 0.5rem;
+    background-color: $grisOscuro;
+    margin-bottom: 0;
+
+    .contenedor-footer {
+        margin-top: calc($separacion / 2);
+    }
+    .copyright {
+        color: $blanco;
+        text-align: center;
+    }
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        // display: flex;
+        // column-gap: 1rem;
+        // justify-content: space-evenly;
+        
+        @include tablet {
+            justify-content: left;
+        }
+
+        a {
+            font-size: 1.9rem;
+        }
+    }
+}

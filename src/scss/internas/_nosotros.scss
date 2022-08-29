@@ -1,0 +1,17 @@
+
+@media (min-width: 1250px) {
+    .seccion-nosotros {
+        @include grid(2, 1fr);
+        column-gap: 2rem;
+        -ms-grid-column-align: center;
+    }
+}
+
+
+.texto-nosotros h2 {
+    font-weight: $black;
+    margin: 2rem 0 0 0;
+}
+.texto-nosotros p {
+    text-align:justify;
+}

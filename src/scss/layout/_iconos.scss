@@ -1,0 +1,30 @@
+@include tablet {
+    .iconos-nosotros {
+    
+            @include grid( 3, 2rem );
+        
+    }
+}
+    .icono {
+        text-align: center;
+        img {
+            height: 10rem; //Con width no siempre quedan igual
+        }
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+.resumen-propiedad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+        .iconos-caracteristicas {
+            justify-content: center;
+            min-width: 70rem;
+        }
+
+    }
+}

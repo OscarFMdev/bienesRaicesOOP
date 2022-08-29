@@ -1,0 +1,54 @@
+@include tablet {
+    .seccion-inferior {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1rem;
+    }
+
+}
+
+.entrada-blog {
+    margin-bottom: 2rem; //Separación entre entradas de blog
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+.informacion-meta {
+    span {
+        color: $amarillo;
+        font-weight: $bold;
+    }
+}
+
+.texto-entrada {
+    a {
+        color: $negro;
+        display: block;
+        margin-top: 2rem;
+    }
+    @include tablet {
+        a {
+            margin: 0;
+        }
+    }
+    h4 {
+        margin: 0;
+        line-height: 1.4;
+        &::after{
+            content: "";
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $verde;
+            margin-top: 1rem;
+        }
+    }
+
+}

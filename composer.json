@@ -1,0 +1,19 @@
+{
+    "name": "oscar-fm/12-bienes_raices_poo",
+    "description": "Aprendiendo PDO",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oscar Fernández Muñoz",
+            "email": "oscarfernandezm95@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    }
+}
