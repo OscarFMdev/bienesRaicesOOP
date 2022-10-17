@@ -12,10 +12,11 @@ This project is about creating a website of a real state enterprise, this is mad
 - SCSS
 - SQL
 - HTML
+- OOP
 
 ## Live Demo
 
-Not yet available [we are working on it](https://giphy.com/gifs/reactionseditor-cat-typing-ule4vhcY1xEKQ)
+Not yet available [we are working on it](https://giphy.com/gifs/reactionseditor-cat-typing-ule4vhcY1xEKQ).
 
 
 ## Getting Started
